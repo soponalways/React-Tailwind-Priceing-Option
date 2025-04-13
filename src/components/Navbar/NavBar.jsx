@@ -9,14 +9,14 @@ const navigationData = [
     { "id": 4, "name": "Contact", "path": "/contact" },
     { "id": 5, "name": "Blog", "path": "/blog" }
 ]
-console.log(navigationData);
+// console.log(navigationData);
 
 const NavBar = () => {
 
     const [open, setOpen] = useState(false);
     const links = navigationData.map(route => <LiLink key={route.id} route={route}></LiLink>)
     return (
-        <nav className='flex justify-between mx-5'>
+        <nav className='flex justify-between mx-5 mt-4'>
             <span className='flex gap-2'>
                 <div className='md:hidden' onClick={() => setOpen(!open)}>
                     {open ? <X></X> : <Menu></Menu>}
