@@ -6,7 +6,7 @@ import PricingOptions from './components/pricingOptions/PricingOptions';
 import ResultsChart from './components/ResultCharts/ResultsChart';
 
 const pricingPromise = fetch("pricingOptions.json").then(res => res.json()); 
-const resutlPromise = fetch("studentsMarks.json").then(res => res.json()); 
+const resutlPromise = fetch("studentsMarks.json").then(res => res.json());
 const App = () => {
   return (
     <div>
