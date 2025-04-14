@@ -31,7 +31,7 @@ const ResultsChart = ({ resutlPromise }) => {
     // console.log(resultsData);
     return (
         <div>
-            <LineChart width={600} height={600} data={resultsData}>
+            <LineChart width={600} height={300} data={resultsData}>
                 <XAxis dataKey={"name"}></XAxis>
                 <YAxis></YAxis>
                 <Tooltip content={<CustomTooltip/>}></Tooltip>
